@@ -14,6 +14,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from vermeer device
 $(call inherit-product, device/xiaomi/vermeer/device.mk)
 
+# EverestOS configurations
+EVEREST_BUILD_TYPE := UNOFFICIAL
+EVEREST_MAINTAINER := Justin117
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+WITH_GAPPS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_BCR := true
+
 PRODUCT_DEVICE := vermeer
 PRODUCT_NAME := lineage_vermeer
 PRODUCT_BRAND := POCO
